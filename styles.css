@@ -1,0 +1,46 @@
+.nav {
+padding: 0; / * all sides 0*/
+
+}
+
+.bar {
+
+}
+
+#primary-nav {
+
+}
+
+.nav li {	
+	display: inline-block;
+
+}
+.nav a {
+	display: inline-block;
+	position: relative;
+	padding: 1em
+	background: pink;
+	transition: all 1s ease-out;
+}
+
+.nav a:hover {
+	color: red;
+	background: black;
+	transition-duration: .3s;
+}
+
+.nav a:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 100%;
+	left:0;
+	width: 0%;
+	height: 5px;
+	background: yellow;
+	transition: all .3s ease-in
+}
+
+.nav a:hover:after {
+	width: 100%;s
+}
